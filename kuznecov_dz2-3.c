@@ -86,7 +86,7 @@ int main(void) {
 }
 
 
-int is_tree(int **array, int N) {                 //проверка на дерево
+int is_tree(int **array, int N) {                 //РїСЂРѕРІРµСЂРєР° РЅР° РґРµСЂРµРІРѕ
 	int error = 0;
 	int check_sum = 0;
 
@@ -103,7 +103,7 @@ int is_tree(int **array, int N) {                 //проверка на дерево
 	return error;
 }
 
-int edge_sum(int* array, int N) {                //проверка суммы ребер из вершины
+int edge_sum(int* array, int N) {                //
 	int sum = 0;
 	for (int i = 0; i < N; i++)
 		sum += array[i];
@@ -111,7 +111,7 @@ int edge_sum(int* array, int N) {                //проверка суммы ребер из верши
 	return sum;
 }
 
-int edge_multi(int* array, int N) {              //проверка каждого ребра из вершины, чтобы исключить кратность
+int edge_multi(int* array, int N) {              //
 	for (int i = 0; i < N; i++) 
 		if (array[i] > 1) 
 			return 1;
